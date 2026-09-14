@@ -1,0 +1,7 @@
+node_modules/
+client/dist/
+server/results/*
+!server/results/.gitkeep
+.env
+.worktrees/
+.DS_Store
