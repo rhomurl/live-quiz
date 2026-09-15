@@ -8,7 +8,7 @@ Stack: Node.js 24 LTS, ESM, Express, Socket.IO 4, React 18, Vite, JSON quiz file
 
 Ship one active game at a time operationally, four-option text questions, a host-controlled lobby/question/reveal/leaderboard/podium flow, secure resume, JSON quiz loading, and host-authorized results download. The server alone decides question deadlines, correctness, and score.
 
-Do not add a database, Redis, teams, images, sound, on-chain features, a quiz editor, kick controls, confetti, early reveal, PM2 support, a component gallery, or a hard Lighthouse threshold before the seminar. Preserve those as post-event ideas.
+Do not add a database, Redis, teams, images, sound, on-chain features, kick controls, confetti, early reveal, PM2 support, a component gallery, or a hard Lighthouse threshold before the seminar. The lightweight host quiz editor is included: it validates and keeps new quizzes in memory for the current server session. Persistent quiz authoring remains a post-event idea.
 
 ## Ownership and dependencies
 

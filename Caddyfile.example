@@ -1,0 +1,18 @@
+# Choose exactly one topology. This host Caddy example matches
+# compose.example.yml, where Docker publishes quiz on loopback only.
+quiz.rhomuel.com {
+	encode gzip
+	reverse_proxy 127.0.0.1:3000
+}
+
+# If Caddy itself runs as a service in the same Compose network, use this
+# site block instead and remove the block above. The service name and port
+# are the Compose DNS name and internal listening port.
+# quiz.rhomuel.com {
+#	encode gzip
+#	reverse_proxy quiz:3000
+# }
+
+# reverse_proxy forwards HTTP upgrade requests, so Socket.IO WebSockets use
+# the same site block. The application owns the SPA fallback for /, /play,
+# and /host; Caddy must proxy those paths rather than serving files itself.

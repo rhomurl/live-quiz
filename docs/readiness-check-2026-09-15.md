@@ -2,7 +2,7 @@
 
 Reviewed September 15, 2026, against all 12 revised task files and the earlier review.
 
-**Verdict: ready to start Task 01 as contract/scaffold work; not yet ready to release independent implementation branches.** The pack has enough documents. Remaining work is to make the existing contract and ownership rules internally consistent, then prove the initial scaffold works.
+**Historical verdict:** ready to start Task 01 as contract/scaffold work; not yet ready to release independent implementation branches. The contract and ownership corrections described below were applied, and the implementation is now integrated. See [implementation-status-2026-09-15.md](implementation-status-2026-09-15.md) for current verification and remaining event gates.
 
 The prior revision removed several original risks but introduced or retained the issues below. Its keyword checks did not establish behavioral consistency. These are specification findings, not failures observed in a running application.
 

@@ -184,6 +184,8 @@ At most three or four active implementation streams are likely easier to integra
 
 Ship one event game at a time operationally, text questions, one correct answer, basic lobby/question/reveal/leaderboard/podium, secure resume, and host results download. Keep reusable quiz loading and the per-game model. Defer animations/confetti, the component demo route, exhaustive screenshot deliverables, a hard Lighthouse score gate, PM2 support, kick unless required, and early reveal. Retain real-device accessibility checks and meaningful protocol tests.
 
+Follow-up implementation added restrained CSS motion and the requested lightweight host quiz editor. These additions keep the original server-authoritative game scope; persistent editor storage and celebratory effects remain deferred.
+
 | Date | Outcome to verify |
 |---|---|
 | Sept 14–15 | Corrected contracts and ownership; runnable minimal scaffold; establish DNS/deployment prerequisites and arrange venue network access. |

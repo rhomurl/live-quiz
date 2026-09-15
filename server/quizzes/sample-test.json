@@ -1,0 +1,30 @@
+{
+  "id": "sample-test",
+  "title": "Practice Round",
+  "questions": [
+    {
+      "text": "What does a hash produce?",
+      "options": ["A fixed-length digest", "A wallet", "A vote", "A password"],
+      "correct": 0,
+      "timeLimitSeconds": 5,
+      "points": 1000,
+      "explanation": "A hash function produces a fixed-length digest from its input."
+    },
+    {
+      "text": "Which key stays secret?",
+      "options": ["Private key", "Public key", "Block hash", "Address"],
+      "correct": 0,
+      "timeLimitSeconds": 5,
+      "points": 1000,
+      "explanation": "The private key signs authorizations and must remain secret."
+    },
+    {
+      "text": "What does Ethereum gas measure?",
+      "options": ["Computation work", "Wi-Fi strength", "Token price", "Wallet age"],
+      "correct": 0,
+      "timeLimitSeconds": 5,
+      "points": 1000,
+      "explanation": "Gas measures computation and storage work performed by an Ethereum transaction."
+    }
+  ]
+}

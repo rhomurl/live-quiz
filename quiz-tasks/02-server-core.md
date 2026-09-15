@@ -7,7 +7,7 @@ Implement Express and Socket.IO in one Node 24 process. Serve `client/dist` in p
 ## Required behavior
 
 - Load `PORT`, `NODE_ENV`, `HOST_SECRET`, `PUBLIC_URL`, and results settings with an application `.env` loader. Refuse production startup when `HOST_SECRET` is empty or the example value.
-- `GET /healthz` returns `{ ok: true, activeGames, retainedGames }`. `GET /api/quizzes` returns validated quiz metadata only.
+- `GET /healthz` returns `{ ok: true, activeGames, retainedGames }`. `GET /api/quizzes` returns validated quiz metadata only. `POST /api/quizzes` accepts a host-secret header and a validated quiz draft, adding it to the current in-memory catalog for later game creation.
 - `GameManager.create(quizId)` creates a cryptographically random `gameId` and collision-checked six-digit PIN. It enforces the limits in 01 and never reuses a retained game's PIN.
 - Allow initial create/join/resume/recover only on an unattached socket. Then attach exactly one host or player role in `socket.data`; never trust a supplied game identity without checking it against that attachment.
 - Authenticate `host:create` and `host:resume` with `HOST_SECRET`. The most recently authenticated host socket replaces the prior host socket for that game. Every later host event requires current ownership and uses request-id/state-version deduplication.

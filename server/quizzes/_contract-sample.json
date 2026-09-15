@@ -1,0 +1,14 @@
+{
+  "id": "contract-sample",
+  "title": "Contract Sample",
+  "questions": [
+    {
+      "text": "Which option is correct?",
+      "options": ["A", "B", "C", "D"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "A is the sample answer."
+    }
+  ]
+}

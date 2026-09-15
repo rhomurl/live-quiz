@@ -1,0 +1,134 @@
+{
+  "id": "blockchain-101",
+  "title": "Blockchain 101",
+  "questions": [
+    {
+      "text": "What does a cryptographic hash function produce from an input?",
+      "options": ["A fixed-length digest", "A private key", "A network vote", "A wallet balance"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "A hash maps arbitrary input to a fixed-length digest. A small input change should produce a very different digest."
+    },
+    {
+      "text": "In a blockchain, what is a block primarily a record of?",
+      "options": ["Recent transactions and metadata", "Every user password", "A single wallet's seed phrase", "A price prediction"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "A block packages transactions with metadata such as a timestamp and a link to the prior block."
+    },
+    {
+      "text": "Which key should you keep secret when using public-key cryptography?",
+      "options": ["Private key", "Public key", "Block number", "Transaction hash"],
+      "correct": 0,
+      "timeLimitSeconds": 15,
+      "points": 1000,
+      "explanation": "A private key authorizes signatures. A public key or address can be shared to receive funds."
+    },
+    {
+      "text": "Why does each Bitcoin block include a hash of the previous block?",
+      "options": ["To make later tampering evident", "To hide all transaction data", "To choose the exchange rate", "To create a wallet password"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "The link creates an ordered chain: changing an earlier block changes its hash and breaks the following link."
+    },
+    {
+      "text": "In Bitcoin, what is proof of work used for?",
+      "options": ["Selecting who proposes the next block", "Encrypting every wallet", "Refunding failed payments", "Choosing a token's price"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "Bitcoin miners compete to find a valid proof of work; the winning miner can propose the next block under the protocol rules."
+    },
+    {
+      "text": "In Ethereum proof of stake, what does a validator risk when it violates protocol rules?",
+      "options": ["Its staked ETH can be slashed", "Its public address becomes secret", "Every block is deleted", "Its wallet app is uninstalled"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "Ethereum proof of stake uses economic penalties, including slashing for some provable violations."
+    },
+    {
+      "text": "What does a wallet's private key do in a typical blockchain transaction?",
+      "options": ["Signs authorization for the transaction", "Stores all blocks on the network", "Sets the recipient's fee", "Reverses a confirmed block"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "Wallet software uses the private key to create a digital signature. The network verifies the signature with the public key."
+    },
+    {
+      "text": "What does a blockchain transaction nonce commonly help prevent?",
+      "options": ["Replaying the same signed transaction", "Reading a private key aloud", "Changing a block's history", "Removing network fees"],
+      "correct": 0,
+      "timeLimitSeconds": 25,
+      "points": 1000,
+      "explanation": "On Ethereum, an account nonce sequences transactions so an old signed transaction cannot normally be accepted again."
+    },
+    {
+      "text": "What is a smart contract on Ethereum?",
+      "options": ["Program code executed by the network", "A legal paper signed by a bank", "A password recovery service", "A private blockchain server"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "An Ethereum smart contract is code and persistent state at an address. Calls execute according to the Ethereum protocol."
+    },
+    {
+      "text": "On Ethereum, what does gas measure?",
+      "options": ["Computation and storage work", "The amount of Wi-Fi signal", "The market value of ETH", "The number of wallet accounts"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "Gas measures execution work. A transaction fee is paid in ETH based on gas used and the chosen fee parameters."
+    },
+    {
+      "text": "What is a key property of a confirmed blockchain transaction?",
+      "options": ["It is recorded according to the chain's consensus rules", "It is automatically reversible by the sender", "It never requires a signature", "It is hidden from every node"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "Confirmation means the transaction is included in the chain and accepted under that network's rules; it is not a chargeback promise."
+    },
+    {
+      "text": "What is an Ethereum Layer 2 generally designed to do?",
+      "options": ["Process activity with security anchored to Ethereum", "Replace every Ethereum validator", "Turn private keys into passwords", "Guarantee zero transaction fees"],
+      "correct": 0,
+      "timeLimitSeconds": 25,
+      "points": 1000,
+      "explanation": "Layer 2 systems execute transactions separately and use Ethereum for settlement or security, with details varying by design."
+    },
+    {
+      "text": "Which action best protects a wallet's seed phrase?",
+      "options": ["Keep it offline and never share it", "Paste it into a support chat", "Store it in a public code repository", "Send it to verify an airdrop"],
+      "correct": 0,
+      "timeLimitSeconds": 20,
+      "points": 1000,
+      "explanation": "Anyone with a seed phrase can usually control the wallet. Legitimate support will not need it."
+    },
+    {
+      "text": "A website asks for your seed phrase to unlock a giveaway. What is this most likely?",
+      "options": ["A phishing scam", "A consensus vote", "A block confirmation", "A harmless wallet backup"],
+      "correct": 0,
+      "timeLimitSeconds": 15,
+      "points": 1000,
+      "explanation": "Seed phrases are recovery credentials, not proof of eligibility. A giveaway request for one is a strong phishing signal."
+    },
+    {
+      "text": "Why should you verify a contract address before signing a token approval?",
+      "options": ["A malicious contract may spend approved tokens", "The address determines your seed phrase", "It guarantees a token will gain value", "It makes every transaction free"],
+      "correct": 0,
+      "timeLimitSeconds": 25,
+      "points": 1000,
+      "explanation": "An approval can authorize a contract to move specified tokens. Check the address and requested allowance before signing."
+    },
+    {
+      "text": "What does a Merkle root summarize in many blockchain blocks?",
+      "options": ["The block's transaction set", "The validator's seed phrase", "The network's future price", "The user's screen size"],
+      "correct": 0,
+      "timeLimitSeconds": 25,
+      "points": 1000,
+      "explanation": "A Merkle tree combines transaction hashes into one root, allowing efficient proofs that a transaction belongs to the set."
+    }
+  ]
+}

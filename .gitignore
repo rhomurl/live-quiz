@@ -1,7 +1,9 @@
 node_modules/
 client/dist/
+dist/
 server/results/*
 !server/results/.gitkeep
 .env
 .worktrees/
 .DS_Store
+.playwright-cli/

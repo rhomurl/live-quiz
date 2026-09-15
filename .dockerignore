@@ -1,0 +1,12 @@
+.git
+.gitignore
+.DS_Store
+.env
+.worktrees
+node_modules
+client/dist
+server/results/*
+!server/results/.gitkeep
+docs
+quiz-tasks
+*.log
